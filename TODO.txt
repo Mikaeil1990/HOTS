@@ -1,0 +1,12 @@
+use cases:
+	registeration->Mikaeil
+	login -> Mikaeil
+	chat game -> Mikaeil
+
+	single player-> Doloris (Select hero, difficulty and start the game)
+	Multiplayer-> Doloris (select hero, wait for other to select a hero and start the game)
+
+	
+	Edit Profile -> Wen
+	Watch Reply-> Wen
+	
