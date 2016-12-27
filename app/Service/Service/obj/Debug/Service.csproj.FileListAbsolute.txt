@@ -1,0 +1,25 @@
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\obj\Debug\Service.Properties.Resources.resources
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\obj\Debug\Service.csproj.GenerateResource.Cache
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\bin\Debug\Service.dll.config
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\bin\Debug\Service.dll
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\bin\Debug\Service.pdb
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\obj\Debug\Service.dll
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Service\obj\Debug\Service.pdb
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\bin\Debug\Service.dll.config
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\bin\Debug\Service.dll
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\bin\Debug\Service.pdb
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\obj\Debug\Service.Properties.Resources.resources
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\obj\Debug\Service.csproj.GenerateResource.Cache
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\obj\Debug\Service.dll
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\obj\Debug\Service.pdb
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Service\bin\Debug\MySql.Data.dll
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\bin\Debug\Service.dll.config
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\bin\Debug\Service.dll
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\bin\Debug\Service.pdb
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\obj\Debug\Service.Properties.Resources.resources
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\obj\Debug\Service.csproj.GenerateResource.Cache
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\obj\Debug\Service.dll
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Service\obj\Debug\Service.pdb

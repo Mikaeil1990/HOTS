@@ -1,0 +1,35 @@
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\bin\Debug\Client.exe.config
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\bin\Debug\Client.exe
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\bin\Debug\Client.pdb
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\obj\Debug\Client.Form1.resources
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\obj\Debug\Client.Properties.Resources.resources
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\obj\Debug\Client.exe
+E:\University\Fontys\lessons\MDW\Rep\HOTS\app\Service\Client\obj\Debug\Client.pdb
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\bin\Debug\Client.exe.config
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.exe
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.pdb
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\bin\Debug\Client.exe
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\bin\Debug\Client.pdb
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.Form1.resources
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.Properties.Resources.resources
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\bin\Debug\MySql.Data.dll
+\\vmware-host\Shared Folders\Desktop\GitHub\HOTS\MDW-HOTS\app\Service\Client\bin\Debug\Client.exe.config
+\\vmware-host\Shared Folders\Desktop\GitHub\HOTS\MDW-HOTS\app\Service\Client\obj\Debug\Client.exe
+\\vmware-host\Shared Folders\Desktop\GitHub\HOTS\MDW-HOTS\app\Service\Client\obj\Debug\Client.pdb
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\bin\Debug\Client.exe.config
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\bin\Debug\Client.exe
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\bin\Debug\Client.pdb
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.FormGameRoom.resources
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.FormMain.resources
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.Properties.Resources.resources
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.exe
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.pdb
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.FormGameRoom.resources
+E:\ICT class\year2\MDW\MDWPROJECT\MDW-HOTS\app\Service\Client\obj\Debug\Client.FormMain.resources
+E:\University\Fontys\lessons\MDW\Repfontys\MDW-HOTS\app\Service\Client\obj\Debug\Client.Login.resources

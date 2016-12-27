@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="server" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="server" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="server/Imports">
+      <xsd:import namespace="server" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Service" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILogin_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_sendInf_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:sendInf" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_sendInf_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:sendInfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGameRoom_move_InputMessage">
+    <wsdl:part name="parameters" element="tns:move" />
+  </wsdl:message>
+  <wsdl:message name="IGameRoom_QuitGameRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuitGameRoom" />
+  </wsdl:message>
+  <wsdl:message name="IGameRoom_SendMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="IGameRoom_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="IGameRoom_onTurnChanges_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:onTurnChanges" />
+  </wsdl:message>
+  <wsdl:message name="IGameRoom_onMessageRecieve_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:onMessageRecieve" />
+  </wsdl:message>
+  <wsdl:message name="IGameRoom_onGameEnded_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:onGameEnded" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_AfterLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AfterLogin" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_AfterLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AfterLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_QuitGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuitGame" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_QuitGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuitGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetOnlinePlayerNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnlinePlayerNames" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetOnlinePlayerNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnlinePlayerNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetOnlineGames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnlineGames" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetOnlineGames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnlineGamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_SendGameRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendGameRequest" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_SendGameRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendGameRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_ChooseHeroes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChooseHeroes" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_ChooseHeroes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChooseHeroesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_StartRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartRoom" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_StartRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetReplays_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReplays" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetReplays_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReplaysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_Options_InputMessage">
+    <wsdl:part name="parameters" element="tns:Options" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_Options_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_OnPlayerChange_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnPlayerChange" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_OnRoomChanges_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnRoomChanges" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetName_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:GetName" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetName_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:GetNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_OnRecieveRequest_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnRecieveRequest" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_OnRecieveRequest_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnRecieveRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetSelectedHero_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedHero" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GetSelectedHero_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedHeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_OnStartGame_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnStartGame" />
+  </wsdl:message>
+  <wsdl:message name="IMainPage_GameEnded_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:GameEnded" />
+  </wsdl:message>
+  <wsdl:portType name="ILogin">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="server/ILogin/GetData" message="tns:ILogin_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="server/ILogin/GetDataResponse" message="tns:ILogin_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="server/ILogin/GetDataUsingDataContract" message="tns:ILogin_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="server/ILogin/GetDataUsingDataContractResponse" message="tns:ILogin_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="server/ILogin/Register" message="tns:ILogin_Register_InputMessage" />
+      <wsdl:output wsaw:Action="server/ILogin/RegisterResponse" message="tns:ILogin_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="server/ILogin/Login" message="tns:ILogin_Login_InputMessage" />
+      <wsdl:output wsaw:Action="server/ILogin/LoginResponse" message="tns:ILogin_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendInf">
+      <wsdl:output wsaw:Action="server/ILogin/sendInf" message="tns:ILogin_sendInf_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="server/ILogin/sendInfResponse" message="tns:ILogin_sendInf_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IGameRoom">
+    <wsdl:operation name="move">
+      <wsdl:input wsaw:Action="server/IGameRoom/move" message="tns:IGameRoom_move_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuitGameRoom">
+      <wsdl:input wsaw:Action="server/IGameRoom/QuitGameRoom" message="tns:IGameRoom_QuitGameRoom_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input wsaw:Action="server/IGameRoom/SendMessage" message="tns:IGameRoom_SendMessage_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Connect">
+      <wsdl:input wsaw:Action="server/IGameRoom/Connect" message="tns:IGameRoom_Connect_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="onTurnChanges">
+      <wsdl:output wsaw:Action="server/IGameRoom/onTurnChanges" message="tns:IGameRoom_onTurnChanges_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="onMessageRecieve">
+      <wsdl:output wsaw:Action="server/IGameRoom/onMessageRecieve" message="tns:IGameRoom_onMessageRecieve_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="onGameEnded">
+      <wsdl:output wsaw:Action="server/IGameRoom/onGameEnded" message="tns:IGameRoom_onGameEnded_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IMainPage">
+    <wsdl:operation name="AfterLogin">
+      <wsdl:input wsaw:Action="server/IMainPage/AfterLogin" message="tns:IMainPage_AfterLogin_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/AfterLoginResponse" message="tns:IMainPage_AfterLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuitGame">
+      <wsdl:input wsaw:Action="server/IMainPage/QuitGame" message="tns:IMainPage_QuitGame_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/QuitGameResponse" message="tns:IMainPage_QuitGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnlinePlayerNames">
+      <wsdl:input wsaw:Action="server/IMainPage/GetOnlinePlayerNames" message="tns:IMainPage_GetOnlinePlayerNames_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/GetOnlinePlayerNamesResponse" message="tns:IMainPage_GetOnlinePlayerNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnlineGames">
+      <wsdl:input wsaw:Action="server/IMainPage/GetOnlineGames" message="tns:IMainPage_GetOnlineGames_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/GetOnlineGamesResponse" message="tns:IMainPage_GetOnlineGames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendGameRequest">
+      <wsdl:input wsaw:Action="server/IMainPage/SendGameRequest" message="tns:IMainPage_SendGameRequest_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/SendGameRequestResponse" message="tns:IMainPage_SendGameRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChooseHeroes">
+      <wsdl:input wsaw:Action="server/IMainPage/ChooseHeroes" message="tns:IMainPage_ChooseHeroes_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/ChooseHeroesResponse" message="tns:IMainPage_ChooseHeroes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartRoom">
+      <wsdl:input wsaw:Action="server/IMainPage/StartRoom" message="tns:IMainPage_StartRoom_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/StartRoomResponse" message="tns:IMainPage_StartRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReplays">
+      <wsdl:input wsaw:Action="server/IMainPage/GetReplays" message="tns:IMainPage_GetReplays_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/GetReplaysResponse" message="tns:IMainPage_GetReplays_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Options">
+      <wsdl:input wsaw:Action="server/IMainPage/Options" message="tns:IMainPage_Options_InputMessage" />
+      <wsdl:output wsaw:Action="server/IMainPage/OptionsResponse" message="tns:IMainPage_Options_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnPlayerChange">
+      <wsdl:output wsaw:Action="server/IMainPage/OnPlayerChange" message="tns:IMainPage_OnPlayerChange_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnRoomChanges">
+      <wsdl:output wsaw:Action="server/IMainPage/OnRoomChanges" message="tns:IMainPage_OnRoomChanges_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetName">
+      <wsdl:output wsaw:Action="server/IMainPage/GetName" message="tns:IMainPage_GetName_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="server/IMainPage/GetNameResponse" message="tns:IMainPage_GetName_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnRecieveRequest">
+      <wsdl:output wsaw:Action="server/IMainPage/OnRecieveRequest" message="tns:IMainPage_OnRecieveRequest_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="server/IMainPage/OnRecieveRequestResponse" message="tns:IMainPage_OnRecieveRequest_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedHero">
+      <wsdl:output wsaw:Action="server/IMainPage/GetSelectedHero" message="tns:IMainPage_GetSelectedHero_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="server/IMainPage/GetSelectedHeroResponse" message="tns:IMainPage_GetSelectedHero_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnStartGame">
+      <wsdl:output wsaw:Action="server/IMainPage/OnStartGame" message="tns:IMainPage_OnStartGame_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GameEnded">
+      <wsdl:output wsaw:Action="server/IMainPage/GameEnded" message="tns:IMainPage_GameEnded_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
